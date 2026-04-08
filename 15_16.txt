@@ -1,0 +1,19 @@
+15
+docker ps
+docker ps -a
+docker images
+docker run hello-world
+docker pull nginx
+docker run -d -p 8081:80 nginx
+
+docker ps
+docker stop <container-id>
+docker rm  
+
+
+16
+docker build -t my-python-app .
+docker images
+docker run my-python-app
+
+docker run -p 5020:5000 my-python-app1
