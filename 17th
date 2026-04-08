@@ -1,0 +1,15 @@
+docker run -d nginx
+docker run -d -p 8086:80 nginx
+ docker run -d -p 8081:80 nginx
+docker volume create vol
+ docker run -it -v vol:/data ubuntu bash
+cd /data
+echo "i love chinnu" >t2.txt
+exit
+docker run -it -v vol:/data ubuntu bash
+cat /data/t2.txt
+exit
+docker run -d -p 8087:80 -v vol:/usr/share/ngnix/html nginx
+docker run -it -v vol:/data ubuntu bash
+echo "<h1> i love chinnu</h1>" >/data/index.html
+exit
