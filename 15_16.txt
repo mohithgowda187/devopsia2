@@ -8,7 +8,7 @@ docker run -d -p 8081:80 nginx
 
 docker ps
 docker stop <container-id>
-docker rm  
+docker rm <container-id>
 
 
 16
